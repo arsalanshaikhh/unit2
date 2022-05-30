@@ -10,16 +10,21 @@
         margin: 0px;
         padding: 0px;
       }
+      #banner {
+        width: 85%;
+        margin: auto;
+      }
       .conban {
-        width: 80%;
+        width: auto;
         border-radius: 10px;
         height: auto;
         background-color: #252f82;
-        margin: auto;
         display: flex;
-        padding: 0px 50px;
+        padding: 0px 5%;
         justify-content: space-between;
         align-items: center;
+        margin: auto;
+        b
       }
       .conban > div:nth-child(1) {
         width: 30%;
@@ -44,12 +49,138 @@
       #doc {
         width: 100%;
       }
+
+      /* serv sec */
+
+      .conser {
+        margin-top: 100px;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: auto;
+        margin-top: 30px;
+        gap: 0px 15px;
+      }
+      .card {
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .card > div {
+        background-color: #adceec;
+        margin: auto;
+      }
+      .card > div > img {
+        display: block;
+        width: 80%;
+        margin: auto;
+        /* padding: 0px 20px; */
+      }
+      .card > h3 {
+        padding: 10px;
+      }
+
+      .card > p {
+        padding: 0px 10px 20px 10px;
+      }
+
+      /* work */
+      #works {
+        width: 85%;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      #works > h1 {
+        text-align: center;
+      }
+      #works > p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .conwor {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .cardw {
+        width: 22%;
+        /* margin: 10px auto; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .cardw > img {
+        width: 100%;
+      }
+
+      .cardw > h2 {
+        padding: 10px;
+      }
+
+      .cardw > p {
+        padding: 0px 10px 10px 10px;
+      }
+
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
+        /* ban */
+        .conban {
+          flex-direction: column;
+        }
+        /* //////////////////// */
+        .conban > div:nth-child(1) {
+          width: 80%;
+        }
+
+        .conban > div:nth-child(2) {
+          width: 80%;
+        }
+
+        /* //////////////////////////////// */
+
+        /* serv sec */
+
+        .conser {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 15px 15px;
+        }
+
+        /* wo */
+        .cardw {
+          width: 47%;
+          /* margin: 10px auto; */
+        }
       }
 
       /* Small Screen */
       @media only screen and (min-width: 320px) and (max-width: 499px) {
+        /* ban */
+        .conban {
+          flex-direction: column;
+        }
+        /* //////////////////// */
+        .conban > div:nth-child(1) {
+          width: 80%;
+        }
+
+        .conban > div:nth-child(2) {
+          width: 80%;
+        }
+
+        /* serv sec */
+
+        .conser {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 15px 15px;
+        }
+        /* wo */
+        .cardw {
+          width: 95%;
+          /* margin: 10px auto; */
+        }
       }
     </style>
   </head>
@@ -73,12 +204,177 @@
         <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
       </div>
       <div id="services">
+        <div class="conser">
+          <!-- <div class="card">
+            <div class="top">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+            <div class="bot">
+              <h3>Instant Video Consultation</h3>
+              <p>Connect within 60 secs</p>
+            </div>
+          </div> -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+
+          <div class="card">
+            <div>
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                alt=""
+              />
+            </div>
+
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+          <!--  -->
+        </div>
         <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
       </div>
       <div id="works">
         <h1>Book an appointment for an in-clinic consultation</h1>
         <p>Find experienced doctors across all specialties</p>
         <div>
+          <div class="conwor">
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+            <div class="cardw">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt=""
+              />
+              <h2>Dentist</h2>
+              <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+          </div>
           <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
         </div>
       </div>
